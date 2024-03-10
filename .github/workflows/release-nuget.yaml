@@ -29,5 +29,5 @@ jobs:
     - name: Publish CorrelationTracking
       uses: brandedoutcast/publish-nuget@v2.5.2
       with:
-          PROJECT_FILE_PATH: /src/CorrelationTracking.csproj
+          PROJECT_FILE_PATH: ./src/CorrelationTracking.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
