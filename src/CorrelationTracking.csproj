@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;net6.0;net8.0;</TargetFrameworks>
+        <Authors>Maksym Marianchuk (@maryanchuk04)</Authors>
+        <Description>Package for tracking correlationId in API request.</Description>
+        <Copyright>Maksym Marianchuk, 2024</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Contextually" Version="1.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+        <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.133">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Serilog" Version="3.1.1" />
+    </ItemGroup>
+
+</Project>
