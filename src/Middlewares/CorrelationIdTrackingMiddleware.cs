@@ -33,7 +33,8 @@ namespace CorrelationTracking.Middlewares
                 // Also push into LogContext so it will show up in messages
                 using (LogContext.PushProperty(CorrelationConstants.CorrelationIdHeaderName, correlationId))
                 {
-                    // Call the next delegate/middleware in the pipeline
+                    // Call the next delegate/middleware in the pipeline and add RequestCorrelationId to Response headers
+                    context.Response.Headers.Add(CorrelationConstants.CorrelationIdHeaderName, correlationId);
                     await _next(context);
                 }
             }
