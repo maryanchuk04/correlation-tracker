@@ -5,6 +5,10 @@
     /// </summary>
     public interface IRequestCorrelationReader
     {
+        /// <summary>
+        /// Get correlationId of current request.
+        /// </summary>
+        /// <returns>CorrelationId</returns>
         string GetCorrelationId();
     }
 }

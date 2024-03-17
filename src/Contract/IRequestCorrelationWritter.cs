@@ -7,6 +7,10 @@ namespace CorrelationTracking.Contract
     /// </summary>
     public interface IRequestCorrelationWritter
     {
+        /// <summary>
+        /// Set Correlation Id for request.
+        /// </summary>
+        /// <param name="value">New correlationId</param>
         IDisposable SetCorrelationId(string value);
     }
 }

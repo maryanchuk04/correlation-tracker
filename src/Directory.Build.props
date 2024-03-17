@@ -6,7 +6,7 @@
     <PackageProjectUrl>https://github.com/maryanchuk04/correlation-tracker</PackageProjectUrl>
     <RepositoryUrl>https://github.com/maryanchuk04/correlation-tracker</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
 
 
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
